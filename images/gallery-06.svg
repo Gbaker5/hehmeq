@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+<rect width="800" height="600" fill="#f0f0ed"/>
+<rect x="105" y="75" width="590" height="450" rx="10" fill="#fff" stroke="#111" stroke-width="12"/>
+<rect x="145" y="115" width="510" height="370" fill="#e5e5df"/>
+<circle cx="400" cy="300" r="78" fill="#f4d400"/>
+<text x="400" y="310" text-anchor="middle" font-family="Arial" font-size="34" font-weight="700" fill="#111">ANIMAL HEAD</text>
+</svg>

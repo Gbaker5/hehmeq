@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650">
+<rect width="900" height="650" fill="#ecece8"/>
+<rect x="90" y="80" width="720" height="490" rx="24" fill="#fff"/>
+<rect x="145" y="135" width="300" height="380" fill="#111"/>
+<rect x="490" y="185" width="250" height="250" fill="#f4d400"/>
+<text x="615" y="325" text-anchor="middle" font-family="Arial" font-size="32" font-weight="700" fill="#111">YOUR PHOTO</text>
+</svg>
