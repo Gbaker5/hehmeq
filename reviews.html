@@ -157,114 +157,44 @@
                 </div>
 
 
-                <form
-                    class="review-form"
-                    action="mailto:hehmeq230+reviews@gmail.com"
-                    method="post"
-                    enctype="text/plain"
-                >
+               
+<form class="review-form" id="review-form">
 
-                    <!-- STAR RATING -->
-                    <div class="form-group">
+  <input
+    type="text"
+    name="name"
+    placeholder="Your Name"
+    required
+  >
 
-                        <label>Your Rating</label>
+  <input
+    type="email"
+    name="email"
+    placeholder="Your Email"
+    required
+  >
 
-                        <div class="star-rating">
+  <select name="rating" required>
+    <option value="">Select a rating</option>
+    <option value="5 Stars">5 Stars</option>
+    <option value="4 Stars">4 Stars</option>
+    <option value="3 Stars">3 Stars</option>
+    <option value="2 Stars">2 Stars</option>
+    <option value="1 Star">1 Star</option>
+  </select>
 
-                            <input
-                                type="radio"
-                                id="review-star-5"
-                                name="rating"
-                                value="5 stars"
-                            >
-                            <label for="review-star-5">★</label>
+  <textarea
+    name="review"
+    placeholder="Write your review..."
+    required
+  ></textarea>
 
-                            <input
-                                type="radio"
-                                id="review-star-4"
-                                name="rating"
-                                value="4 stars"
-                            >
-                            <label for="review-star-4">★</label>
+  <button type="submit">Submit Review</button>
 
-                            <input
-                                type="radio"
-                                id="review-star-3"
-                                name="rating"
-                                value="3 stars"
-                            >
-                            <label for="review-star-3">★</label>
+</form>
 
-                            <input
-                                type="radio"
-                                id="review-star-2"
-                                name="rating"
-                                value="2 stars"
-                            >
-                            <label for="review-star-2">★</label>
+<script src="js/mail.js" defer></script>
 
-                            <input
-                                type="radio"
-                                id="review-star-1"
-                                name="rating"
-                                value="1 star"
-                            >
-                            <label for="review-star-1">★</label>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- NAME -->
-                    <div class="form-group">
-
-                        <label for="review-name">
-                            Your Name
-                        </label>
-
-                        <input
-                            type="text"
-                            id="review-name"
-                            name="name"
-                            placeholder="First and Last Name"
-                            required
-                        >
-
-                    </div>
-
-
-                    <!-- REVIEW -->
-                    <div class="form-group">
-
-                        <label for="review-message">
-                            Your Review
-                        </label>
-
-                        <textarea
-                            id="review-message"
-                            name="review"
-                            rows="7"
-                            placeholder="Give us your honest review. Did we hang it right?"
-                            required
-                        ></textarea>
-
-                    </div>
-
-
-                    <button
-                        type="submit"
-                        class="btn btn-primary review-submit-button"
-                    >
-                        Submit Review
-                    </button>
-
-                    <p class="review-note">
-                        Your review will open in your email app so you can
-                        send it directly to us.
-                    </p>
-
-                </form>
 
             </div>
 
