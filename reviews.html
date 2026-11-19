@@ -175,13 +175,24 @@
   >
 
   <select name="rating" required>
-    <option value="">Select a rating</option>
-    <option value="5 Stars">5 Stars</option>
-    <option value="4 Stars">4 Stars</option>
-    <option value="3 Stars">3 Stars</option>
-    <option value="2 Stars">2 Stars</option>
-    <option value="1 Star">1 Star</option>
-  </select>
+  <option value="">Select a rating</option>
+  <option value="5">5 Stars</option>
+  <option value="4">4 Stars</option>
+  <option value="3">3 Stars</option>
+  <option value="2">2 Stars</option>
+  <option value="1">1 Star</option>
+</select>
+
+  <div style="display:none;">
+  <label for="website">Leave this field empty</label>
+  <input
+    type="text"
+    id="website"
+    name="website"
+    tabindex="-1"
+    autocomplete="off"
+  >
+</div>
 
   <textarea
     name="review"
