@@ -1884,3 +1884,138 @@ body.lightbox-open {
     }
 
 }
+
+
+/* =========================================
+   REVIEW FORM - UPDATED STYLING
+========================================= */
+
+/* All form fields */
+.review-form input[type="text"],
+.review-form input[type="email"],
+.review-form select,
+.review-form textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+
+    min-height: 58px;
+    padding: 16px 18px;
+
+    background: #242424;
+    color: #fff;
+
+    border: 1px solid #454545;
+    border-radius: 12px;
+
+    font-family: inherit;
+    font-size: 16px;
+
+    outline: none;
+    transition: all .2s ease;
+}
+
+/* Placeholder text */
+.review-form input::placeholder,
+.review-form textarea::placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+/* Focus effect */
+.review-form input:focus,
+.review-form select:focus,
+.review-form textarea:focus {
+    border-color: var(--red);
+    box-shadow: 0 0 0 3px rgba(227, 34, 0, .15);
+}
+
+/* Rating dropdown */
+.review-form select {
+    appearance: none;
+    cursor: pointer;
+
+    padding-right: 45px;
+
+    background-color: #242424;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+
+    background-repeat: no-repeat;
+    background-position: right 18px center;
+}
+
+.review-form select option {
+    background: #242424;
+    color: #fff;
+}
+
+/* Review textarea */
+.review-form textarea {
+    min-height: 170px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+/* Submit button */
+.review-form button {
+    width: 100%;
+    min-height: 55px;
+
+    padding: 15px 24px;
+
+    background: var(--red);
+    color: #fff;
+
+    border: none;
+    border-radius: 12px;
+
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: all .2s ease;
+}
+
+.review-form button:hover {
+    background: var(--red-dark);
+    transform: translateY(-2px);
+}
+
+.review-form button:active {
+    transform: translateY(0);
+}
+
+.review-form button:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 3px;
+}
+
+/* Form spacing */
+.review-form {
+    gap: 20px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 700px) {
+
+    .review-submit-card {
+        padding: 30px 20px;
+    }
+
+    .review-submit-heading h2 {
+        font-size: 2.3rem;
+    }
+
+    .review-form {
+        gap: 16px;
+    }
+
+    .review-form input,
+    .review-form select,
+    .review-form textarea {
+        font-size: 16px;
+    }
+}
