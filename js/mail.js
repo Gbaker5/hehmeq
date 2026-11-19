@@ -1,4 +1,5 @@
 
+
 const reviewForm = document.querySelector("#review-form");
 
 if (reviewForm) {
@@ -21,7 +22,8 @@ if (reviewForm) {
         name: formData.get("name"),
         email: formData.get("email"),
         rating: formData.get("rating"),
-        review: formData.get("review")
+        review: formData.get("review"),
+        website: formData.get("website") // Honeypot
       };
 
       const response = await fetch(
@@ -38,15 +40,25 @@ if (reviewForm) {
       const result = await response.json();
 
       if (!response.ok) {
-        throw new Error(result.error || "Submission failed.");
+        throw new Error(
+          result.error || `Submission failed (${response.status}).`
+        );
+      }
+
+      if (!result.success) {
+        throw new Error("Review submission was unsuccessful.");
       }
 
       alert("Thank you! Your review was submitted successfully.");
+
       reviewForm.reset();
 
     } catch (error) {
-      console.error(error);
-      alert("We couldn't submit your review. Please try again.");
+      console.error("Review submission error:", error);
+
+      alert(
+        error.message || "We couldn't submit your review. Please try again."
+      );
 
     } finally {
       submitButton.disabled = false;
